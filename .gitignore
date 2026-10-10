@@ -1,0 +1,30 @@
+# Git ignore for Wallpics
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller / Build outputs
+build/
+*.spec
+
+# Keep dist or ignore if too large (ignore by default so git repo remains lightweight)
+dist/
+
+# Downloaded files & caches
+downloaded_images/
+*.log
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Archives
+*.zip
+
+# OS specific
+Thumbs.db
+Desktop.ini
+.DS_Store
