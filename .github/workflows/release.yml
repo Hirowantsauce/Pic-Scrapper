@@ -28,7 +28,7 @@ jobs:
 
       - name: Build Standalone Executable
         run: |
-          python -m PyInstaller --noconsole --onefile --name "Wallpics" --collect-all customtkinter gui.py
+          python -m PyInstaller --noconsole --onefile --name "Wallpics" --collect-all customtkinter --collect-all playwright gui.py
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2

@@ -434,6 +434,8 @@ class WallpicsDesktopApp(ctk.CTk):
             self.event_queue.put(ev)
 
         try:
+            import importlib
+            importlib.reload(download_images)
             download_images.download_images(
                 url=url,
                 output=output_dir,

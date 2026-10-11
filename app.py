@@ -102,6 +102,8 @@ class Job:
 
 
 def run_download_job(job: Job):
+    import importlib
+    importlib.reload(download_images)
     job.status = "running"
     job.log("info", f"Started job for URL: {job.url}")
 

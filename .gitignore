@@ -12,6 +12,8 @@ dist/
 
 # Downloaded files & caches
 downloaded_images/
+test_output*/
+test_output/
 *.log
 
 # Environments
